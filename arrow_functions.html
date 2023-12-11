@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow function</title>
+</head>
+
+<body>
+
+    <script>
+
+        // function add(num1, num2) {
+        //     sum = num1 + num2;
+        //     return sum;
+        // }
+        // console.log(add(1, 2));
+
+        // const add = (num1, num2) => {
+        //     result = num1+ num2;
+        //     console.log(result);
+        // }
+        // add(5,7);
+
+
+        // func = arg => { console.log(arg) };
+        // func(10);
+
+        // func = () => console.log('hello')
+        // func()
+
+        // const addition = (arg1, arg2) => arg1 + arg2;
+        // console.log(addition(2, 5))
+
+        // let marks = [20, 30, 15, 25, 18, 30]
+        // const display = (numArray) => (
+        //     numArray.filter((num) =>  num > 10 )
+        //         .map((num) =>  num ** 2 )
+        //         )
+        // console.log(display(marks))
+
+
+        // const subject = (arg1,arg2) => ({name: arg1, age: arg2})
+        // result = subject('Arshaq', 20)
+        // console.log(result)
+
+
+//         fname = 'Muhammed'
+//         lname = 'Arshaq'
+//         age = 20
+//         city = 'Calicut'
+//         contact = 1234
+
+//    console.log('my name is '+ fname + ' ' + lname + ' and my age is ' + age + '. My contact is ' + contact) 
+//    console.log(`my name is ${fname} ${lname} and age is ${age} `)
+
+   numbers = [50, 80, 70, 26]
+   const [a,b,c,d] = numbers
+   console.log(a)
+
+   person = {
+    name : 'Arshaq',
+    age : '20',
+    city : 'feroke'
+   }
+   
+   const {name,age,city} = person
+    // x = person.name;
+    // y = person.age;
+    // z = person.city;
+   console.log(name,age,city)
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

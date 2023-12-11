@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asynchronous operation using async and await</title>
+</head>
+
+<body>
+    <h1>Asynchronous -async and await</h1>
+
+    <script>
+        async function printData() {
+            data1 = function1();
+            console.log(data1);
+
+            data2 = await function2();
+            console.log(data2);
+
+            data3 = function3();
+            console.log(data3);
+        }
+
+
+
+        printData()
+        function function1() {
+            return 'Message1'
+        }
+
+        function function2() {
+            return new Promise(function (resolve, reject) {
+                setTimeout(() => {
+                    resolve('message2')
+                }, 5000);
+
+            })
+        }
+
+        function function3() {
+            return 'Message3'
+        }
+
+    </script>
+</body>
+
+</html>

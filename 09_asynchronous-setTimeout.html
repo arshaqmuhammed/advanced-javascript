@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synchronous programming</title>
+</head>
+<body>
+    <h1>Asynchronous operation using setTimeout()</h1>
+
+    <script>
+        data1 = function1();
+        console.log(data1) ;
+
+        data2 = function2();
+        console.log(data2) ;
+
+        data3 = function3();
+        console.log(data3);
+
+        function function1(){
+            return 'Message1'
+        }
+
+        function function2(){
+            setTimeout(() => {
+                return 'Message2'
+            }, 2000);
+        }
+
+        function function3(){
+            return 'Message3'
+        }
+
+    </script>
+</body>
+</html>

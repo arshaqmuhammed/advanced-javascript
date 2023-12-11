@@ -1,0 +1,26 @@
+class Product{
+    static count = 0;
+
+    constructor(name, category, price){
+        this.name = name;
+        this.category = category;
+        this.price = price;
+        Product.count = Product.count + 1;
+    }
+
+    display_product(){
+        console.log('name : ' , this.name  );
+        console.log('category : ' , this.category  );
+        console.log('price : ' , this.price  );
+    }
+
+    product_count(){
+        console.log('total no.of products: ', Product.count)
+    }
+}
+
+product1 = new Product('Bat','Sports',2500);
+product2 = new Product('Bowl','Sports',1000);
+
+console.log(product1.name)
+console.log(product2.product_count())

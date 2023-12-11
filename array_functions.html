@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array iteration methods</title>
+</head>
+<body>
+    
+
+ <script>
+    // const numbers = [8, 6, 7];
+    // console.log(numbers);
+    // numbers.forEach(process)
+
+    // function process(value, index){
+    //     console.log(value);
+    //     console.log(index);
+    //     // console.log(array);
+    // };
+
+    // const marks = [10, 20, 25, 32];
+    // console.log(marks);
+    // marklist = marks.map(square)
+    // console.log(marklist)
+
+    // function square(value, index, array){
+    //     return value ** 2;
+    // }
+
+    const ages = [25, 35, 28, 27, 18, 19];
+    console.log(ages);
+    newAges = ages.filter(check);
+    console.log(newAges);
+
+    function check(value, index, array){
+        return value > 30;
+    }
+    // console.log(ages);
+
+    const products = [
+        { 'name':'Laptop', 'price': 40000, 'category': 'Electronics'},
+        { 'name':'T-shirt', 'price': 700, 'category': 'Clothings'},
+        { 'name':'Keyboard', 'price': 1200, 'category': 'Electronics'},
+        { 'name':'Shoes', 'price': 2800, 'category': 'Footwears'}
+    ];
+
+    const electronicProducts = products.filter( function (product) {
+        return product.category === 'Footwears'
+    }) 
+    console.log(electronicProducts);
+
+    const numbers = [1, 2, 3, 4, 5];
+    const sum = numbers.reduce(function (result, currentNumber){
+        return result + currentNumber;
+    }, 0 )
+    console.log(sum)
+
+ </script>
+</body>
+</html>
